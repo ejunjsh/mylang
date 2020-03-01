@@ -1,8 +1,8 @@
-bin: 
-	mkdir bin
-
 bin/scanner: main.c scan.c bin
 	cc -o bin/scanner -g main.c scan.c
+
+bin: 
+	mkdir bin
 
 clean:
 	rm -rf bin *.o
